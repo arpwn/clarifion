@@ -1,0 +1,258 @@
+.air {
+    display: flex;
+    flex-direction: column;
+
+    .one {
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            
+            .left {
+                background-color: #2C7EF8;
+                border-radius: 10px;
+            }
+
+            .left .rightImage {
+                width: 134px;
+                height: 134px;
+                margin-top: 15px;
+            }
+
+            .right .cardHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: -20px;
+                margin-top: -8px;
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .rOne {
+                    height: 25px;
+                }
+
+                .rTwo {
+                    display: flex;
+                    margin-top: 10px;
+
+                    .starIcon {
+                        width: 98px;
+                        height: 18px;
+                        margin-left: 20px;
+                    }
+                }
+
+                .rThree {
+                    display: flex;
+                    margin-top: 10px;
+                    align-items: center;
+                    text-align: center;
+
+                    .bubbleIcon {
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 20px;
+                    }
+
+                    .stock {
+                        color: #37465A;
+                        font-size: 16px;
+                        font-weight: 300;
+                        margin-left: -25px;
+                    }
+                }
+
+                .rFour {
+                    
+                    .desc {
+                        font-size: 16px;
+                        color: #4D5254;
+                        margin-left: -20px;
+                        text-align: justify;
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            .right .title {
+                font-size: 20px;
+                text-transform: capitalize;
+            }
+
+            .right .cardHeader .firstPrice {
+                font-size: 16px;
+                font-weight: 600;
+                color: #969696;
+                margin-right: 10px;
+            }
+
+            .right .cardHeader .secondPrice {
+                font-size: 22px;
+                font-weight: 600;
+                color: #2C7EF8;
+            }
+        }
+    }
+
+    .two {
+        margin-top: 32px;
+        font-size: 16px;
+
+        .tick1, .tick2, .tick3 {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 12px;
+        }
+
+        .tickIcon {
+            width: 22px;
+            height: 22px;
+        }
+
+        .negative, .designed, .perfect {
+            display: flex;
+        }
+
+        .negative, .designed {
+            margin-bottom: 16px;
+        }
+    }
+
+    .three {
+        background-color: #EDF3FD;
+        border-radius: 10px;
+        margin: 32px 0px;
+
+        .percentage {
+            display: flex;
+            align-items: center;
+
+            .lightBlue {
+                color: #2C7EF8;
+            }
+
+            .percentageText {
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .percentageIcon {
+                width: 32px;
+                height: 32px;
+                margin: 12px 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 844px) {
+    
+    .air {
+
+        .one {
+
+            .row {
+                width: 320px;
+                height: 80px;
+                margin-left: -30px;
+
+                .left {
+                    width: 160px;
+                    height: 160px;
+                }
+
+                .right {
+
+                    .rOne {
+                        width: auto;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .cardHeader .title {
+                            font-size: 14px;
+                            margin-right: 15px;
+                        }
+
+                        .cardHeader .prices .firstPrice {
+                            font-size: 10px;
+                        }
+
+                        .cardHeader .prices .secondPrice {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .rFour .desc {
+                        width: 326px;
+                        height: 26px;
+                        font-size: 12px;
+                        margin-left: -175px;
+                        margin-top: 100px;
+                        color: 4D5254;
+                    }
+                }
+
+                .rightImage {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .right {
+                    width: 224px;
+                    height: 58px;
+                }
+
+                .rFour {
+                    width: 326px;
+                    height: 26px;
+
+                    .desc {
+                        font-size: 12px;
+                        color: #4D5254;
+                        text-align: justify;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+
+        .two {
+            margin-top: 140px;
+            font-size: 12px;
+            width: 350px;
+            margin-left: -30px;
+        }
+
+        .three {
+            width: 320px;
+            margin-left: -30px;
+            text-align: justify;
+
+            .percentage {
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                vertical-align: top;
+            }
+
+            .percentageIcon {
+                margin-right: -15px;
+            }
+
+            .percentageText {
+                margin-top: 65px !important;
+            }
+        }
+    }
+    
+}

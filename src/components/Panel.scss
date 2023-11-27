@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+
+    .header {
+        font-size: 32px;
+        width: 500px;
+        text-transform: capitalize;
+        text-align: justify;
+
+        .blue {
+            color: #2C7EF8;
+            text-transform: uppercase;
+        }
+
+        .blue2 {
+            color: #2C7EF8;
+        }
+    }
+    
+}
+
+@media (max-width: 844px) {
+    
+    .header {
+        font-size: 23px !important;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 120% !important;
+    }
+
+}
